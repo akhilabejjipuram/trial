@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h2:hover {
+            color: orange;
+        }
+        .form {
+            border: 1px solid lightgray;
+            padding: 10px;
+        }
+        .input-box {
+            margin: auto 0 20px;
+        }
+        input:hover {
+            background-color: lightgray;
+        }
+    </style>
+    <script>
+        function login() {
+            name = document.getElementById("name").value;
+            pass = document.getElementById("pass").value;
+            if (name == "akhila" && pass == "12345") {
+                alert("Login Successful");
+            } else {
+                alert("Invalid Credentials");
+            }
+        }
+    </script>
+<title>Page Title</title>
+</head>
+<body>
+<h2>Login Form</h2>
+<div class="form">
+    <div class="input-box">
+        <label>User name:</label>
+        <input id="name" type="text" name="name" />
+    </div>
+    <div class="input-box">
+        <label>Password:</label>
+        <input id="pass" type="password" name="pass" />
+    </div>
+    <button style="width: 120px; height: 30px; cursor: pointer; background-color: lightgreen;" type="submit" onclick="login()">Login</button>
+</div>
+</body>
+</html>
